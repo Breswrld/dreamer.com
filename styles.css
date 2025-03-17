@@ -84,7 +84,7 @@ b {
 }
 
 .coLs {
-    width: 50%; /* Adjusted width */
+    width: 50%;
 }
 
 .cols0 {
@@ -130,15 +130,56 @@ p {
     line-height: 1.8;
 }
 
-/* Added Image Replacement Circle */
-.image-replacement-circle {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-    border-radius: 50%;
-    background: linear-gradient(135deg, #89cff0, #d0bfff); /* Gradient */
-    opacity: 0.8;
-    margin-left: 100px; /* Adjust margin */
-    margin-top: 50px; /* Adjust margin */
+/* Three Animated Circles */
+.image-replacement-circles {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
-/* Removed other circles */
+.image-replacement-circles .circle {
+    position: absolute;
+    width: 100px; /* Adjust size */
+    height: 100px; /* Adjust size */
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.image-replacement-circles .circle:nth-child(1) {
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #89cff0, #d0bfff);
+    animation: pulse1 3s linear infinite alternate;
+}
+
+.image-replacement-circles .circle:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #9370db, #e6e6fa);
+    animation: pulse2 3s linear infinite alternate;
+}
+
+.image-replacement-circles .circle:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(135deg, #89cff0, #d0bfff);
+    animation: pulse3 3s linear infinite alternate;
+}
+
+@keyframes pulse1 {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes pulse2 {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); } /* Slightly larger scale */
+}
+
+@keyframes pulse3 {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); } /* Slightly smaller scale */
+}

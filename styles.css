@@ -1,15 +1,20 @@
-/* CSS Reset */
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+/* --- CSS Reset --- */
 body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* --- Base Styles --- */
 body {
     background-color: #f3f5f8;
-    font-family: 'Poppins', sans-serif; /* Add the font family */
+    font-family: 'Poppins', sans-serif;
 }
 
+/* --- Container and Layout --- */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -17,6 +22,7 @@ body {
     flex-direction: column;
 }
 
+/* --- Navigation Styles --- */
 nav {
     display: flex;
     justify-content: space-around;
@@ -32,6 +38,7 @@ nav {
 b {
     color: #4eb3e2;
     font-size: 36px;
+    font-family: 'Courier New', monospace; /* Use a monospace font */
 }
 
 .navItems {
@@ -46,19 +53,35 @@ b {
 .navItems li a {
     text-decoration: none;
     color: #333;
+    font-size: 16px;
 }
 
 .links {
     font-size: 24px;
+    display: flex;
+    align-items: center;
 }
 
+.links a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.links a i {
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* --- Wrapper and Content Area --- */
 .wrapper {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* --- Column 0 Content Styles --- */
 .coLs.cols0 {
     text-align: center;
     padding: 20px;

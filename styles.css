@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -115,4 +114,68 @@ nav ul li a {
 .links a {
     margin: 25px 10px;
     color: #3d535f;
+}
+
+/* Animation for circles */
+.circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3498db;
+    opacity: 0.7;
+    animation: moveCircle 5s linear infinite alternate;
+}
+
+.circle1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    top: 20%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.circle3 {
+    bottom: 10%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.circle4 {
+    top: 30%;
+    left: 30%;
+    animation-delay: 3s;
+}
+
+.circle5 {
+    bottom: 25%;
+    right: 30%;
+    animation-delay: 4s;
+}
+
+.circle6 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.middle-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    z-index: 10;
 }

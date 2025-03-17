@@ -38,7 +38,7 @@ nav {
 b {
     color: #4eb3e2;
     font-size: 36px;
-    font-family: 'Courier New', monospace; /* Use a monospace font */
+   font-family: 'Poppins', sans-serif; /* Use a monospace font */
 }
 
 .navItems {

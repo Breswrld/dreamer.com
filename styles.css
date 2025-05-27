@@ -170,10 +170,7 @@ header {
     display: none;
 }
 
-/* Desktop Styles */
-.mobile-logo {
-    display: none;
-}
+
 
 .book-container {
     position: relative;
@@ -281,9 +278,6 @@ header {
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.mobile-header {
-    display: none;
-}
 .container{
  display: block;
 }

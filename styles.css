@@ -426,7 +426,12 @@ footer h1 {
         display: none;
     }
 
-   
+   .hamburger.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
     body {
         overflow-x: hidden;

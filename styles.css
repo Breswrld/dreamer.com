@@ -118,6 +118,10 @@ b {
 .links a i:active {
     color: darkblue;
 }
+.modile-header
+{
+display: none;	
+}
 
 /* --- Wrapper and Content Area --- */
 .wrapper {

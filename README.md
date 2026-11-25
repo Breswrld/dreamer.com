@@ -2,7 +2,7 @@
 
 Personal website and college networking vlog by **Brehanna Sutherland**, built with HTML, CSS, and JavaScript.
 
-**Live Site:** `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
+**Live Site:**https://breswrld.github.io/dreamer.com/index.html
 
 ## Pages
 - **Home (`index.html`)**: Interactive digital hardcover book introducing my college journey, key networking themes, collage lightbox, and contact links.

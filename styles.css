@@ -78,7 +78,7 @@ nav {
 
 .nav-inner {
     width: 100%;
-    max-width: min(1520px, 92vw);
+    max-width: min(1840px, 94vw);
     height: 100%;
     margin: 0 auto;
     padding: 0 32px;
@@ -213,19 +213,19 @@ nav {
 
 .container {
     width: 100%;
-    max-width: min(1520px, 92vw);
+    max-width: min(1840px, 94vw);
     margin: 0 auto;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: minmax(0, 1.62fr) minmax(290px, 0.92fr);
+    grid-template-columns: minmax(0, 1.85fr) minmax(290px, 0.85fr);
     align-items: center;
-    gap: clamp(28px, 3.2vw, 60px);
+    gap: clamp(28px, 3vw, 56px);
 }
 
 .book-stage {
-    --book-width: min(940px, 100%, calc((100vh - 195px) * 1.925));
+    --book-width: min(1240px, 100%, calc((100vh - 180px) * 1.925));
     width: 100%;
     min-width: 0;
     display: flex;
@@ -527,22 +527,22 @@ nav {
 
 .book-heading {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(21px, 3.3cqi, 36px);
+    font-size: clamp(21px, 3.3cqi, 42px);
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: -0.015em;
     color: var(--ink);
-    margin-bottom: clamp(8px, 1.4cqi, 16px);
+    margin-bottom: clamp(8px, 1.4cqi, 18px);
     text-wrap: balance;
 }
 
 .book-subheading {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(17px, 2.4cqi, 27px);
+    font-size: clamp(17px, 2.4cqi, 31px);
     font-weight: 700;
     line-height: 1.24;
     color: var(--ink);
-    margin-bottom: clamp(10px, 1.6cqi, 18px);
+    margin-bottom: clamp(10px, 1.6cqi, 20px);
     text-wrap: balance;
 }
 
@@ -551,21 +551,21 @@ nav {
 }
 
 .book-prose {
-    font-size: clamp(12.5px, 1.6cqi, 16.5px);
+    font-size: clamp(12.5px, 1.55cqi, 18.5px);
     font-weight: 500;
     line-height: 1.62;
     color: #243240;
-    margin-bottom: clamp(12px, 2cqi, 22px);
+    margin-bottom: clamp(12px, 2cqi, 24px);
     max-width: 100%;
 }
 
 .book-quote {
     font-family: 'Playfair Display', Georgia, serif;
     font-style: italic;
-    font-size: clamp(14px, 1.65cqi, 19px);
+    font-size: clamp(14px, 1.65cqi, 21px);
     line-height: 1.5;
     color: var(--ink);
-    padding: clamp(10px, 1.3cqi, 14px) 0 0;
+    padding: clamp(10px, 1.3cqi, 16px) 0 0;
     border-top: 1px solid var(--hairline);
 }
 
@@ -583,9 +583,9 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: clamp(8px, 1.05cqi, 12px) clamp(14px, 1.9cqi, 24px);
-    min-height: clamp(36px, 4.2cqi, 46px);
-    font-size: clamp(12.5px, 1.35cqi, 15px);
+    padding: clamp(8px, 1.05cqi, 13px) clamp(14px, 1.9cqi, 26px);
+    min-height: clamp(36px, 4.2cqi, 48px);
+    font-size: clamp(12.5px, 1.35cqi, 16px);
     font-weight: 600;
     text-decoration: none;
     border-radius: 8px;
@@ -715,14 +715,14 @@ nav {
 
 .editorial-list strong {
     display: block;
-    font-size: clamp(12.5px, 1.45cqi, 16.5px);
+    font-size: clamp(12.5px, 1.45cqi, 18px);
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 2px;
 }
 
 .editorial-list p {
-    font-size: clamp(11.5px, 1.28cqi, 14.5px);
+    font-size: clamp(11.5px, 1.28cqi, 16px);
     font-weight: 500;
     line-height: 1.45;
     color: #243240;
@@ -748,10 +748,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: clamp(8px, 1.25cqi, 16px) 4px;
+    padding: clamp(8px, 1.25cqi, 18px) 4px;
     text-decoration: none;
     color: var(--ink);
-    font-size: clamp(12.5px, 1.4cqi, 16px);
+    font-size: clamp(12.5px, 1.4cqi, 17.5px);
     font-weight: 600;
     transition: color 0.16s ease, padding-left 0.16s ease;
 }
@@ -763,7 +763,7 @@ nav {
 
 .connect-handle {
     font-weight: 500;
-    font-size: clamp(11.5px, 1.28cqi, 14.5px);
+    font-size: clamp(11.5px, 1.28cqi, 16px);
     color: #334155;
 }
 
@@ -2272,7 +2272,3 @@ footer i {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-
-
-

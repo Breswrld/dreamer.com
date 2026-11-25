@@ -1,90 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BRE</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-    <nav>
-        <div class="logo desktop-logo">BRE<b>@</b></div>
+    <meta name="description" content="Bre's vlog and personal website sharing her college journey and experiences." />
+    <meta property="og:title" content="BRE" />
+    <meta property="og:description" content="Bre's vlog and personal website sharing her college journey and experiences." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e8ec4'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='32' fill='%23ffffff'%3EB@%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <nav aria-label="Primary Navigation">
+      <div class="nav-inner">
+        <a href="./index.html" class="logo desktop-logo">BRE<b>@</b></a>
         <ul class="navItems">
-            <li><a href="https://breswrld.github.io/dreamer.com/">Home</a></li>
-            <li><a href="https://breswrld.github.io/vlog/">Vlog</a></li>
-            <li><a href="https://breswrld.github.io/coverpage.com/">About</a></li>
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li><a href="./vlog.html">Vlog</a></li>
         </ul>
         <div class="links">
-            <a href="https://www.instagram.com/yourgirlbrebre_?igsh=MWt1OGplcGd1N2p1ag==">
-                <i class="fa-brands fa-square-instagram fa-xl" aria-label="Instagram"></i>
-            </a>
-            <a href="https://profile.indeed.com/p/brehannas-nqhn56w">
-                <i class="fa-brands fa-linkedin fa-xl" aria--label="LinkedIn"></i>
-            </a>
+          <a
+            href="https://www.instagram.com/yourgirlbrebre_?igsh=MWt1OGplcGd1N2p1ag=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
+          </a>
+          <a
+            href="./Brehanna_Sutherland_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume PDF"
+            title="Resume (PDF)"
+          >
+            <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 224H88c30.9 0 56 25.1 56 56s-25.1 56-56 56H80v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H80v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H176c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16z"/></svg>
+          </a>
         </div>
+      </div>
     </nav>
+
     <div class="mobile-header">
-        <h1>Welcome to <span class="multitext">Bre</span>@</h1>
-        <p><em>"If at first you don't succeed, try, try, try again."</em></p>
+      <h1>Welcome to <strong class="brand-bold"><span class="multitext">Bre</span>@</strong></h1>
+      <p><em>"If at first you don't succeed, try, try, try again."</em></p>
     </div>
+
     <main>
-	 <div class="overlay"></div>
-        <button class="hamburger">&#9776;</button>
-		
-		
-        <section class="welcome-section">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="book-container">
-                        <div class="book-cover"></div>
-                        <div class="book">
-                            <div class="page left-page">
-                                <div class="coLs cols0">
-                                    <span class="topline">Welcome</span>
-                                    <h1>My Name is <span class="multitext">Bre</span></h1>
-                                    <p>I started this vlog to discuss my new life as a college student and my journey to a new country. This blog is about how networking in college can help us develop as a person? and how it is an investment to our career or future goals?</p>
-                               <a href="https://breswrld.github.io/vlog/" class="underline"> View Vlog</a>
-							   </div>
-                            </div>
-                            <div class="spine"></div>
-                             <div class="page right-page">
-                        <img src="image.webp" alt="A collage" class="book-image">
-                    </div>
-                        </div>
-                    </div>
+      <div class="overlay"></div>
+      <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+
+      <!-- Desktop Interactive Book Experience -->
+      <section class="welcome-section" aria-label="Bre's Digital Journal">
+        <div class="container">
+          <div class="wrapper">
+            <div class="book-stage is-phone-cover-closed" id="bookStage">
+              <div class="book-container" id="bookContainer">
+                <!-- Hardcover outer binding -->
+                <div class="book-cover" aria-hidden="true">
+                  <div class="book-cover-spine"></div>
                 </div>
+
+                <!-- Layered page edges for realistic thickness -->
+                <div class="book-edge book-edge-left" aria-hidden="true"></div>
+                <div class="book-edge book-edge-right" aria-hidden="true"></div>
+
+                <!-- Ribbon bookmark -->
+                <div class="book-ribbon" aria-hidden="true"></div>
+
+                <!-- Phone Closed Front Cover -->
+                <div class="phone-book-cover" id="phoneBookCover" aria-label="Book Cover">
+                  <div class="cover-spine-hinge" aria-hidden="true"></div>
+                  <div class="cover-border-frame" aria-hidden="true"></div>
+                  <div class="cover-bookplate">
+                    <span class="cover-brand">BRE<b>@</b></span>
+                    <p class="cover-tagline">College Journey &amp; Vlog</p>
+                    <button type="button" class="btn-primary cover-open-btn" id="openBookBtn">
+                      Open <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Open 2-page book -->
+                <div class="book" id="book">
+                  <!-- Center gutter spine -->
+                  <div class="spine" aria-hidden="true"></div>
+
+                  <!-- Animated page flip overlay -->
+                  <div class="flip-sheet" id="flipSheet" aria-hidden="true">
+                    <div class="flip-face flip-front"></div>
+                    <div class="flip-face flip-back"></div>
+                  </div>
+
+                  <!-- Left Page -->
+                  <div class="page left-page" id="leftPage">
+                    <div class="page-surface">
+                      <!-- Spread 1 Left -->
+                      <article class="spread-content is-active" data-spread="0" data-side="left">
+                        <div class="page-meta">
+                          <span class="page-kicker">Welcome</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 01</span>
+                        </div>
+                        <h1 class="book-heading">My Name is <span class="multitext">Bre</span></h1>
+                        <p class="book-prose">
+                          I started this vlog to discuss my new life as a college student and my journey to a new country.
+                          This blog is about how networking in college can help us develop as a person? and how it is an
+                          investment to our career or future goals?
+                        </p>
+                        <div class="book-actions">
+                          <a href="./vlog.html" class="btn-primary">
+                            View Vlog <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                          </a>
+                        </div>
+                      </article>
+
+                      <!-- Spread 2 Left -->
+                      <article class="spread-content" data-spread="1" data-side="left" hidden>
+                        <div class="page-meta">
+                          <span class="page-kicker">The Journey</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 03</span>
+                        </div>
+                        <h2 class="book-heading">A New Country, <span class="multitext">A New Chapter</span></h2>
+                        <p class="book-prose">
+                          Moving abroad for college means rebuilding daily routines from the ground up — learning new
+                          systems, finding community on campus, and turning unfamiliar moments into stepping stones.
+                        </p>
+                        <blockquote class="book-quote">
+                          "If at first you don't succeed, try, try, try again."
+                        </blockquote>
+                      </article>
+
+                      <!-- Spread 3 Left -->
+                      <article class="spread-content" data-spread="2" data-side="left" hidden>
+                        <div class="page-meta">
+                          <span class="page-kicker">Colophon</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 05</span>
+                        </div>
+                        <h2 class="book-heading">Follow the <span class="multitext">Vlog</span></h2>
+                        <p class="book-prose">
+                          Read along as I document campus life, lessons in personal growth, and the relationships that
+                          shape future career opportunities.
+                        </p>
+                        <div class="book-actions">
+                          <a href="./vlog.html" class="btn-primary">
+                            Open Vlog <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                          </a>
+                          <a href="mailto:brehanna.sutherland@ctstate.edu" class="btn-secondary">
+                            Send an Email
+                          </a>
+                        </div>
+                      </article>
+
+                      <button
+                        type="button"
+                        class="page-turn-zone page-turn-prev"
+                        id="prevEdgeBtn"
+                        aria-label="Previous spread"
+                        disabled
+                      >
+                        <span class="corner-hint" aria-hidden="true">
+                          <svg class="icon" viewBox="0 0 320 512" aria-hidden="true"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Right Page -->
+                  <div class="page right-page" id="rightPage">
+                    <div class="page-surface">
+                      <!-- Spread 1 Right -->
+                      <article class="spread-content spread-photo-layout is-active" data-spread="0" data-side="right">
+                        <div class="page-meta page-meta-right">
+                          <span class="page-kicker">Visual Diary</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 02</span>
+                        </div>
+                        <button
+                          type="button"
+                          class="photo-frame"
+                          id="collageTrigger"
+                          aria-label="View collage image larger"
+                        >
+                          <img
+                            src="./image.webp"
+                            alt="A collage of Bre's college life"
+                            class="book-image"
+                            width="1080"
+                            height="1080"
+                            decoding="async"
+                          />
+                          <span class="photo-zoom-hint">
+                            <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg> Enlarge
+                          </span>
+                        </button>
+                        <p class="photo-caption">Life in motion &middot; College &amp; New Beginnings</p>
+                      </article>
+
+                      <!-- Spread 2 Right -->
+                      <article class="spread-content" data-spread="1" data-side="right" hidden>
+                        <div class="page-meta page-meta-right">
+                          <span class="page-kicker">Key Themes</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 04</span>
+                        </div>
+                        <h2 class="book-subheading">Why Campus Networking Matters</h2>
+                        <ol class="editorial-list">
+                          <li>
+                            <span class="list-num">01</span>
+                            <div>
+                              <strong>Personal Development</strong>
+                              <p>Conversations across cultures broaden perspective and build everyday confidence.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="list-num">02</span>
+                            <div>
+                              <strong>Mentorship &amp; Peers</strong>
+                              <p>Classmates and professors turn shared challenges into lasting support networks.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <span class="list-num">03</span>
+                            <div>
+                              <strong>Career Investment</strong>
+                              <p>Every genuine connection today becomes a bridge toward future goals.</p>
+                            </div>
+                          </li>
+                        </ol>
+                      </article>
+
+                      <!-- Spread 3 Right -->
+                      <article class="spread-content" data-spread="2" data-side="right" hidden>
+                        <div class="page-meta page-meta-right">
+                          <span class="page-kicker">Connect</span>
+                          <span class="meta-sep" aria-hidden="true">&middot;</span>
+                          <span class="page-num">Page 06</span>
+                        </div>
+                        <h2 class="book-subheading">Where to Find Bre</h2>
+                        <ul class="connect-list">
+                          <li>
+                            <a href="https://www.instagram.com/yourgirlbrebre_?igsh=MWt1OGplcGd1N2p1ag==" target="_blank" rel="noopener noreferrer">
+                              <span>Instagram</span>
+                              <span class="connect-handle">@yourgirlbrebre_</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="./Brehanna_Sutherland_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                              <span>Resume (PDF)</span>
+                              <span class="connect-handle">View Updated PDF</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="mailto:brehanna.sutherland@ctstate.edu">
+                              <span>Email</span>
+                              <span class="connect-handle">brehanna.sutherland@ctstate.edu</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="tel:2039086370">
+                              <span>Phone</span>
+                              <span class="connect-handle">(203) 908-6370</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </article>
+
+                      <button
+                        type="button"
+                        class="page-turn-zone page-turn-next"
+                        id="nextEdgeBtn"
+                        aria-label="Next spread"
+                      >
+                        <span class="corner-hint" aria-hidden="true">
+                          <svg class="icon" viewBox="0 0 320 512" aria-hidden="true"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clean Book Controls Below Spread -->
+              <div class="book-controls" aria-label="Book page navigation">
+                <button type="button" class="book-nav-btn" id="prevBtn" disabled>
+                  <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> Previous
+                </button>
+                <span class="page-counter" id="pageCounter" aria-live="polite">Page 1 of 6</span>
+                <div class="chapter-tabs" role="group" aria-label="Book chapters">
+                  <button type="button" class="chapter-tab chapter-tab-cover" id="closeCoverBtn">
+                    Cover
+                  </button>
+                  <span class="meta-sep chapter-tab-cover-sep" aria-hidden="true">&middot;</span>
+                  <button type="button" class="chapter-tab is-active" aria-pressed="true" data-target="0">
+                    01. Welcome
+                  </button>
+                  <span class="meta-sep" aria-hidden="true">&middot;</span>
+                  <button type="button" class="chapter-tab" aria-pressed="false" data-target="1">
+                    02. Journey
+                  </button>
+                  <span class="meta-sep" aria-hidden="true">&middot;</span>
+                  <button type="button" class="chapter-tab" aria-pressed="false" data-target="2">
+                    03. Connect
+                  </button>
+                </div>
+                <button type="button" class="book-nav-btn" id="nextBtn">
+                  Next <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
             </div>
-        </section>
-		 <section class="mobile-welcome-section">
+
+            <!-- Right-Side About Summary & Link -->
+            <aside class="about-panel" aria-label="About Bre">
+              <span class="about-kicker">About Bre</span>
+              <h2 class="about-title">
+                College Life, New Horizons &amp; <strong class="brand-bold"><span class="multitext">BRE@</span></strong>
+              </h2>
+              <p class="about-text">
+                Moving to a new country as a college student means navigating unfamiliar routines, building community
+                from scratch, and turning everyday challenges into growth. This space brings together Bre&rsquo;s vlog,
+                reflections on campus networking, and how genuine connections become an investment in future career
+                goals.
+              </p>
+              <dl class="about-details">
+                <div class="about-detail-row">
+                  <dt>Focus</dt>
+                  <dd>College life &middot; New country &middot; Networking</dd>
+                </div>
+                <div class="about-detail-row">
+                  <dt>Motto</dt>
+                  <dd>&ldquo;If at first you don&rsquo;t succeed, try, try, try again.&rdquo;</dd>
+                </div>
+              </dl>
+              <div class="about-actions">
+                <a href="./about.html" class="btn-primary">
+                  About <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile Section -->
+      <section class="mobile-welcome-section">
         <div class="mobile-coLs cols0">
-            <span class="topline">Welcome</span>
-            <h1>My Name is <span class="multitext">Bre</span></h1>
-            <p>I started this vlog to discuss my new life as a college student and my journey to a new country. This blog is about how networking in college can help us develop as a person? and how it is an investment to our career or future goals?</p>
-	   <a href="https://breswrld.github.io/vlog/" class="underline">View Vlog</a>
-	   </div>
-		</section>
+          <span class="topline">Welcome</span>
+          <h1>My Name is <span class="multitext">Bre</span></h1>
+          <p>
+            I started this vlog to discuss my new life as a college student and my journey to a new country. This blog
+            is about how networking in college can help us develop as a person? and how it is an investment to our
+            career or future goals?
+          </p>
+          <a href="./vlog.html" class="underline">View Vlog</a>
+        </div>
+      </section>
     </main>
-    <script src="script.js"></script>
-	
-	
-       <footer> 
-	   <br>
-	   <h1> Contact us  </h1>
-	   <br>
-    <div class="contact-info">
-        <div class="contact-item">
-		
-            <a href="mailto:brehanna.sutherland@ctstate.edu"><i class="fa-solid fa-envelope"></i></a>
-            <p>brehanna.sutherland@ctstate.edu</p>
-        </div>
-        <div class="contact-item">
-           <i class="fa-solid fa-phone"></i>
-            <p>(203) 908-6370</p>
-        </div>
+
+    <!-- Lightbox Modal for Collage -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Collage full view" hidden>
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image preview">
+          <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </button>
+        <img
+          src="./image.webp"
+          alt="A collage of Bre's college life"
+          class="lightbox-img"
+          width="1080"
+          height="1080"
+          decoding="async"
+        />
+        <p class="lightbox-caption">Life in motion &middot; College &amp; New Beginnings</p>
+      </div>
     </div>
-    <p class="copyright">&copy; Copyright 2024. All Rights Reserved.</p>
-</footer>
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
 
